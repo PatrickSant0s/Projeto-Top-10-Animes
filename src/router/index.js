@@ -1,9 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+const HomePage = () => import("../views/HomePage.vue");
 
 Vue.use(VueRouter);
 
-const routes = [];
+const routes = [{ path: "/", component: HomePage, name: "HomePage" }];
 
 const router = new VueRouter({
   mode: "history",

@@ -1,6 +1,7 @@
 <template>
   <v-app>
-    <div class="primary">Teste</div>
+    
+   
     <v-main>
       <router-view/>
       
