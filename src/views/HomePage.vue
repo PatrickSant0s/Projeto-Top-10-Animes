@@ -1,12 +1,16 @@
 <template>
-    <div>teste
-    </div>
+    <div><MenuBar/></div>
 </template>
 
 <script>
-export default {
+import MenuBar from '@/components/MenuBar.vue';
 
-    name:"HomePage"
+
+export default {
+  components: { MenuBar },
+
+    name:"HomePage",
+    component:"Menubar"
 
 };
 </script>
