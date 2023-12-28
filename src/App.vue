@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    
+    <MenuBar/>
    
     <v-main>
       <router-view/>
@@ -12,10 +12,10 @@
 </template>
 
 <script>
-
+import MenuBar from "@/components/MenuBar.vue";
 export default {
   name: 'App',
-
+ components:{MenuBar},
   data: () => ({
     
   }),

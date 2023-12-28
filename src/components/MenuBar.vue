@@ -1,8 +1,9 @@
 <template>
   <div>
-    <ul>
-      <li v-for="item in menuBar" :key="item.menu" class="menu-principal">
-        <a :href="item.href" class="links"></a>{{ item.menu }}
+    <ul class="d-flex">
+      <li v-for="item in menuBar" :key="item.menu" class="menu-principal pa-3"  @click="item.actionItem()">
+        
+        {{ item.menu }}
       </li>
     </ul>
   </div>
@@ -14,13 +15,18 @@ export default {
   data() {
     return {
       menuBar: [
-        { menu: "Home", href: "#" },
-        { menu: "Contatos", href: "#" },
+        { menu: "Home", actionItem:() => this.$router.push("/") },
+        { menu: "Contatos", actionItem:() => this.$router.push("/contact")},
         { menu: "Galeria", href: "#" },
+        { menu: "Login", actionItem:() => this.$router.push("/login") },
       ],
     };
   },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.menu-principal {
+  list-style: none;
+}
+</style>

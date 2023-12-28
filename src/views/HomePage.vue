@@ -1,17 +1,18 @@
 <template>
-    <div><MenuBar/></div>
+  <div>
+    
+    <HomeCarousel />
+  </div>
 </template>
 
 <script>
-import MenuBar from '@/components/MenuBar.vue';
 
+import HomeCarousel from "@/components/HomeCarousel.vue";
 
 export default {
-  components: { MenuBar },
+  components: { HomeCarousel },
 
-    name:"HomePage",
-    component:"Menubar"
-
+  name: "HomePage",
 };
 </script>
 
