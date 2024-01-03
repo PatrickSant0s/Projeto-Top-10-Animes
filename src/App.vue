@@ -16,7 +16,7 @@ import MenuBar from "@/components/MenuBar.vue";
 export default {
   name: "App",
   components: { MenuBar },
-  data: () => ({}),
+ 
 
   computed: {
     users() {
@@ -25,6 +25,7 @@ export default {
   },
   mounted() {
     setUsers(this.users);
+    
   },
 };
 </script>

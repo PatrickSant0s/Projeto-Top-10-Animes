@@ -2,7 +2,7 @@
   <v-sheet class="bg-deep-purple pa-12" rounded>
     <v-card class="mx-auto px-6 py-8" max-width="344">
       <v-form v-model="form" @submit.prevent="onSubmit">
-        <v-text-field
+        <v-text-field id="email"
           v-model="email"
           :readonly="loading"
           :rules="[required]"
@@ -40,6 +40,9 @@
 
 <script>
 export default {
-    name:"UserLogin"
-}
+    name:"UserLogin",
+    data: () => ({}),
+
+
+};
 </script>

@@ -19,6 +19,7 @@ export default {
         { menu: "Contatos", actionItem:() => this.$router.push("/contact")},
         { menu: "Galeria", href: "#" },
         { menu: "Login", actionItem:() => this.$router.push("/login") },
+        { menu: "Register", actionItem:() => this.$router.push("/Register") },
       ],
     };
   },
