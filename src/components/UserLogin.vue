@@ -9,7 +9,7 @@
           class="mb-2"
           clearable
           label="Email"
-        ></v-text-field>
+        > </v-text-field>
 
         <v-text-field
           v-model="password"
