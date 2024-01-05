@@ -23,6 +23,8 @@
         <br />
 
         <v-btn
+        @click="onSubmit"
+         @submit="onSubmit"
           :disabled="!form"
           :loading="loading"
           block
@@ -39,10 +41,43 @@
 </template>
 
 <script>
+
+import { users } from "../utils/Users";
+
 export default {
     name:"UserLogin",
-    data: () => ({}),
+    data: () => ({
+    email: "",
+    password: "",
+    loading: false,
+  }),
 
+    computed: {
+    users() {
+      return users;
+    },
+  },
+  mounted() {
+    
+    
+  },
+  methods: {
+    onSubmit(event) {
+      event.preventDefault();
+      
+      if (!this.email || !this.password) {
+        alert('Preencha ambos os campos de email e senha.');
+        return;
+      }
+      const isValidUser = this.users.find(user => user.email === this.email && user.password === this.password);
 
+      if (isValidUser) {
+        this.loading = true;
+        alert('Login feito com sucesso');
+      } else {
+        alert('Usuário inválido. Verifique seu email e senha, Caso não tenha conta Registre-se ');
+      }
+    },
+  },
 };
 </script>
