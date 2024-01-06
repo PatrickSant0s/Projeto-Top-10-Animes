@@ -1,5 +1,12 @@
 <template>
-  <v-sheet class="bg-deep-purple pa-12" rounded>
+ <div> <v-parallax
+    src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+  >
+    <div class="d-flex flex-column fill-height justify-center align-center text-white" >
+      <h1 class="text-h4 font-weight-thin mb-4">
+        Vuetify
+      </h1>
+      <v-sheet class="bg-deep-purple pa-12" rounded>
     <v-card class="mx-auto px-6 py-8" max-width="344">
       <v-form v-model="form" @submit.prevent="onSubmit">
         <v-text-field id="email"
@@ -38,6 +45,12 @@
       </v-form>
     </v-card>
   </v-sheet>
+     
+    </div>
+  </v-parallax>
+
+ 
+</div>
 </template>
 
 <script>
@@ -46,10 +59,16 @@ import { users } from "../utils/Users";
 
 export default {
     name:"UserLogin",
+    
     data: () => ({
     email: "",
     password: "",
     loading: false,
+    menuBar: [
+        { menu: "Register", actionItem:() => this.$router.push("/Register") },
+      ],
+    
+    
   }),
 
     computed: {
@@ -74,8 +93,10 @@ export default {
       if (isValidUser) {
         this.loading = true;
         alert('Login feito com sucesso');
+        this.$router.push("/")
       } else {
-        alert('Usuário inválido. Verifique seu email e senha, Caso não tenha conta Registre-se ');
+        alert('Usuário não encontrado. Verifique seus dados e Registre-se ');
+        this.$router.push('/Register')
       }
     },
   },

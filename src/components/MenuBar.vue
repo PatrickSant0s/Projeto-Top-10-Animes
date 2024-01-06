@@ -12,7 +12,7 @@
 <script>
 export default {
   name: "MenuBar",
-  data() {
+    data() {
     return {
       menuBar: [
         { menu: "Home", actionItem:() => this.$router.push("/") },

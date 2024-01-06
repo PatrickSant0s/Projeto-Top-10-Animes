@@ -1,6 +1,8 @@
 <template>
+  <div  class="background">
+
   <v-card class="mx-auto" max-width="344" title="User Registration">
-    <v-container id="refister-form">
+    <v-container id="refister-form" >
       <v-text-field
         v-model="first"
         color="primary"
@@ -45,6 +47,7 @@
       </v-btn>
     </v-card-actions>
   </v-card>
+  </div>
 </template>
 
 <script>
@@ -82,4 +85,6 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>
