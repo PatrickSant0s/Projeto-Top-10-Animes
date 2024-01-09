@@ -93,10 +93,10 @@ export default {
       if (isValidUser) {
         this.loading = true;
         alert('Login feito com sucesso');
-        this.$router.push("/")
+        this.$router.push("/").catch()
       } else {
         alert('Usuário não encontrado. Verifique seus dados e Registre-se ');
-        this.$router.push('/Register')
+        this.$router.push('/Register').catch()
       }
     },
   },
