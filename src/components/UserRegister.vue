@@ -73,11 +73,7 @@ export default {
         Status: "Cadastrado",
       };
       
-      this.email = "";
-      this.firstName = "";
-      this.lastName = "";
-      this.password = "";
-
+      window.localStorage.setItem("user", JSON.stringify(newUser)  )
       console.log("Usuário cadastrado:", newUser);
       
     },
