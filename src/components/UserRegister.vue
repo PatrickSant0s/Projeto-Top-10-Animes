@@ -1,5 +1,5 @@
 <template>
-  <div  class="background">
+  <div   class="Menu-Principal">
 
   <v-card class="mx-auto" max-width="344" title="User Registration">
     <v-container id="refister-form" >
@@ -82,5 +82,7 @@ export default {
 </script>
 
 <style scoped>
-
+.Menu-Principal {
+  background: black;
+}
 </style>

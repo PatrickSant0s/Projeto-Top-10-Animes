@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="Menu-Princia">
     <ul class="d-flex">
       <li v-for="item in menuBar" :key="item.menu" class="menu-principal pa-3"  @click="item.actionItem()">
         
@@ -17,9 +17,10 @@ export default {
       menuBar: [
         { menu: "Home", actionItem:() => this.$router.push("/") },
         { menu: "Contatos", actionItem:() => this.$router.push("/contact")},
-        { menu: "Galeria", href: "#" },
+        { menu: "Galeria", actionItem:() => this.$router.push("/galeria") },
         { menu: "Login", actionItem:() => this.$router.push("/login") },
         { menu: "Register", actionItem:() => this.$router.push("/Register") },
+        { menu: "Logout", actionItem:() => this.$router.push("/login") },
       ],
     };
   },

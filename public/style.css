@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --fonte-principal: "Jolly Lodger";
+    --fonte-secundaria: "Rubik";
+    --color-principal: #FE772D;
+    --color-texto-secudario: #F5F5F5;
+    --colo-texto-botao: #292D32;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background: black;
+}

@@ -1,11 +1,12 @@
 <template>
-  <v-app>
+  <div class="Background"><v-app>
     <MenuBar />
 
     <v-main>
       <router-view />
     </v-main>
   </v-app>
+</div>
 </template>
 
 <script>
@@ -40,3 +41,4 @@ export default {
   }
 };
 </script>
+

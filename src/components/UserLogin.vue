@@ -1,5 +1,5 @@
 <template>
- <div> <v-parallax
+ <div class="Menu-Principal"> <v-parallax
     src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
   >
     <div class="d-flex flex-column fill-height justify-center align-center text-white" >
