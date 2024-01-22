@@ -20,7 +20,7 @@ export default {
         { menu: "Galeria", actionItem:() => this.$router.push("/galeria") },
         { menu: "Login", actionItem:() => this.$router.push("/login") },
         { menu: "Register", actionItem:() => this.$router.push("/Register") },
-        { menu: "Logout", actionItem:() => this.$router.push("/login") },
+        { menu: "Logout", actionItem:() => this.$router.push("") },
       ],
     };
   },

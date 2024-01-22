@@ -5,7 +5,7 @@
       <!-- Adicione um link ao redor de cada imagem -->
       <li class="fotos" v-for="foto in galeriaImages" :key="foto.src">
         <a :href="foto.link" target="_blank" rel="noopener noreferrer">
-          <img src="" :alt="foto.alt" class="img" :style="{ backgroundImage: `url(${foto.src})` }">>
+          <img :src="foto.src" :alt="foto.alt" class="img" :style="{ backgroundImage: `url(${foto.src})` }">
         </a>
       </li>
     </ul>

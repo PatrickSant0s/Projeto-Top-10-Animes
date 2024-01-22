@@ -4,6 +4,9 @@
       <v-sheet height="100%">      
         <a :href="image.link" target="_blank" rel="noopener noreferrer" class="carousel-link">
           <div class="d-flex fill-height justify-center align-center position-relative">
+            <div class="top-rank-container">
+  <div class="top-rank">{{ index + 1 }}</div>
+</div>
             <img :src="image.src" :alt="image.alt" class="carousel-image" />
           </div>
         </a>
@@ -40,6 +43,20 @@ export default {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.top-rank {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+
+.top-rank-container {
+  position: absolute;
+  top: 10px; /* Ajuste a posição conforme necessário */
+  left: 10px; /* Ajuste a posição conforme necessário */
+  z-index: 1;
 }
 
 .top-rank {

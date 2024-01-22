@@ -34,9 +34,8 @@ export default {
   },
   methods: {
     alreadyExistsUser() {
-      const user = JSON.parse(window.localStorage.getItem("user"));
-      if (!user) this.$router.push("/login");
-      this.$router.push("/")
+      
+   
     }
   }
 };
