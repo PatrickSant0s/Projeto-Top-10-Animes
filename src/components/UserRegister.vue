@@ -82,7 +82,4 @@ export default {
 </script>
 
 <style scoped>
-.Menu-Principal {
-  background: black;
-}
 </style>

@@ -1,12 +1,12 @@
 <template>
   <v-carousel cycle height="500" hide-delimiter-background show-arrows="hover">
     <v-carousel-item v-for="(image, index) in sortedImages" :key="index">
-      <v-sheet height="100%">      
+      <v-sheet height="100%">
         <a :href="image.link" target="_blank" rel="noopener noreferrer" class="carousel-link">
           <div class="d-flex fill-height justify-center align-center position-relative">
             <div class="top-rank-container">
-  <div class="top-rank">{{ index + 1 }}</div>
-</div>
+              <div class="top-rank">{{ index + 1 }}</div>
+            </div>
             <img :src="image.src" :alt="image.alt" class="carousel-image" />
           </div>
         </a>
@@ -30,8 +30,8 @@ export default {
 <style scoped>
 .carousel-image {
   width: 300px;
-    height: 300px;
-    border-radius: 16px;
+  height: 300px;
+  border-radius: 16px;
 }
 
 .carousel-link {
@@ -54,8 +54,10 @@ export default {
 
 .top-rank-container {
   position: absolute;
-  top: 10px; /* Ajuste a posição conforme necessário */
-  left: 10px; /* Ajuste a posição conforme necessário */
+  top: 10px;
+  /* Ajuste a posição conforme necessário */
+  left: 10px;
+  /* Ajuste a posição conforme necessário */
   z-index: 1;
 }
 
