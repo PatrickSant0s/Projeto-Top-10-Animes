@@ -11,7 +11,7 @@
 
 <script>
 
-import { setUsers } from "./utils/Users";
+
 import { users } from "./utils/Users";
 import MenuBar from "@/components/MenuBar.vue";
 export default {
@@ -28,9 +28,9 @@ export default {
   created(){
     this.alreadyExistsUser()
   },
+  
   mounted() {
-    setUsers(this.users);
-
+    
   },
   methods: {
     alreadyExistsUser() {

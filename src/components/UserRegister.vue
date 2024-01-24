@@ -74,7 +74,12 @@ export default {
       };
       
       window.localStorage.setItem("user", JSON.stringify(newUser)  )
-      console.log("Usuário cadastrado:", newUser);
+
+      let {Email, Password} = JSON.parse(window.localStorage.getItem("user"))
+
+      console.log(Email, Password)
+      if(Email && Password ) this.$router.push('/login').catch() 
+      
       
     },
   },
