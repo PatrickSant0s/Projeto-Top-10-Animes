@@ -5,7 +5,7 @@
         <a :href="image.link" target="_blank" rel="noopener noreferrer" class="carousel-link">
           <div class="d-flex fill-height justify-center align-center position-relative">
             <div class="top-rank-container">
-              <div class="top-rank">{{ index + 1 }}</div>
+              
             </div>
             <img :src="image.src" :alt="image.alt" class="carousel-image" />
           </div>
