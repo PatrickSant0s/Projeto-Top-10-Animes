@@ -38,6 +38,7 @@ export default {
   data: () => ({
     email: "",
     password: "",
+    active: false,
     loading: false,
     menuBar: [
       { menu: "Register", actionItem: () => this.$router.push("/Register") },
@@ -59,16 +60,19 @@ export default {
   methods: {
     onSubmit(event) {
       event.preventDefault();
-      if(!this.isFieldsValidation(this.email, this.password)) alert('Preencher ambos corretamente')
+      if (!this.isFieldsValidation(this.email, this.password)) alert('Preencher ambos corretamente')
 
-        console.log(this.user[0])
-        const isValidUser = this.user.find(user => user.Email === this.email && user.Password === this.password);
-        
+      console.log(this.user[0])
+      const isValidUser = this.user.find(user => user.Email === this.email && user.Password === this.password);
+
 
       if (isValidUser) {
         this.loading = true;
         alert('Login feito com sucesso');
+        
         this.$router.push("/").catch()
+
+
       } else {
         alert('Usuário não encontrado. Verifique seus dados e Registre-se ');
         this.$router.push('/Register').catch()
@@ -76,11 +80,11 @@ export default {
     },
 
     isFieldsValidation(email, password) {
-    console.log(email, password)
-     
-      if( !email || !password ) return false
+      console.log(email, password)
+
+      if (!email || !password) return false
       else return true
-       
+
 
 
 

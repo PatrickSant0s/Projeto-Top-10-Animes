@@ -1,5 +1,5 @@
 <template>
-  <v-carousel cycle height="500" hide-delimiter-background show-arrows="hover">
+  <v-carousel cycle height="700" hide-delimiter-background show-arrows="hover">
     <v-carousel-item v-for="(image, index) in sortedImages" :key="index">
       <v-sheet height="100%">
         <a :href="image.link" target="_blank" rel="noopener noreferrer" class="carousel-link">
@@ -29,8 +29,8 @@ export default {
 
 <style scoped>
 .carousel-image {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   border-radius: 16px;
 }
 

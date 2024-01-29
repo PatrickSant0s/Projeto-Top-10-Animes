@@ -26,7 +26,9 @@ export default {
   },
 
   created(){
+    
     this.alreadyExistsUser()
+    
   },
   
   mounted() {
@@ -34,8 +36,9 @@ export default {
   },
   methods: {
     alreadyExistsUser() {
-      
-   
+      let user = JSON.parse(window.localStorage.getItem("user"))
+       if(!user?.Status) this.$router.push('/login')   
+      console.log(user)
     }
   }
 };
