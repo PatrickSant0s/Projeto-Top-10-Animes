@@ -1,90 +1,100 @@
 <template>
-  <div   class="Menu-Principal">
+  <div class="Menu-Principal">
+    <v-card class="mx-auto" max-width="344" title="User Registration">
+      <v-container id="register-form">
+        <v-text-field
+          v-model="firstName"
+          color="primary"
+          label="First name"
+          variant="underlined"
+        ></v-text-field>
 
-  <v-card class="mx-auto" max-width="344" title="User Registration">
-    <v-container id="refister-form" >
-      <v-text-field
-        v-model="first"
-        color="primary"
-        label="First name"
-        variant="underlined"
-      ></v-text-field>
+        <v-text-field
+          v-model="lastName"
+          color="primary"
+          label="Last name"
+          variant="underlined"
+        ></v-text-field>
 
-      <v-text-field
-        v-model="last"
-        color="primary"
-        label="Last name"
-        variant="underlined"
-      ></v-text-field>
+        <v-text-field
+          v-model="email"
+          color="primary"
+          label="Email"
+          variant="underlined"
+        ></v-text-field>
 
-      <v-text-field
-        v-model="email"
-        color="primary"
-        label="Email"
-        variant="underlined"
-      ></v-text-field>
+        <v-text-field
+          v-model="password"
+          color="primary"
+          label="Password"
+          placeholder="Enter your password"
+          variant="underlined"
+        ></v-text-field>
+      </v-container>
 
-      <v-text-field
-        v-model="password"
-        color="primary"
-        label="Password"
-        placeholder="Enter your password"
-        variant="underlined"
-      ></v-text-field>
-      
-      
-    </v-container>
+      <v-divider></v-divider>
 
-    <v-divider></v-divider>
+      <v-card-actions>
+        <v-spacer></v-spacer>
 
-    <v-card-actions>
-      <v-spacer></v-spacer>
-
-      <v-btn color="success" @click="registerUsers" @submit="registerUsers">
-        Complete Registration
-
-        <v-icon icon="mdi-chevron-right" end></v-icon>
-      </v-btn>
-    </v-card-actions>
-  </v-card>
+        <v-btn color="success" @click="registerUser">
+          Complete Registration
+          <v-icon icon="mdi-chevron-right" end></v-icon>
+        </v-btn>
+      </v-card-actions>
+    </v-card>
   </div>
 </template>
 
 <script>
-
 export default {
   name: "UserRegister",
   data() {
     return {
       email: "",
-      firstname: "",
+      firstName: "",
       lastName: "",
-      password: "",
-      users: [],
+      password: ""
     };
   },
   methods: {
-    registerUsers() {
+    registerUser() {
       const newUser = {
-        FirstName: this.first,
-        LastName: this.last,
-        Email: this.email,
-        Password: this.password,
-        Status: "Cadastrado",
+        firstName: this.firstName,
+        lastName: this.lastName,
+        email: this.email,
+        password: this.password,
+        status: "Cadastrado"
       };
-      
-      window.localStorage.setItem("user", JSON.stringify(newUser)  )
 
-      let {Email, Password} = JSON.parse(window.localStorage.getItem("user"))
+      // Obter usuários existentes do localStorage
+      const existingUsers = JSON.parse(window.localStorage.getItem("users")) || [];
+      existingUsers.push(newUser);
 
-      console.log(Email, Password)
-      if(Email && Password ) this.$router.push('/login').catch() 
-      
-      
-    },
-  },
+      // Atualizar a lista de usuários no localStorage
+      window.localStorage.setItem("users", JSON.stringify(existingUsers));
+
+      // Limpar os campos do formulário
+      this.firstName = "";
+      this.lastName = "";
+      this.email = "";
+      this.password = "";
+
+      // Redirecionar para a página de login
+      this.$router.push("/login").catch(err => {
+        if (err.name !== "NavigationDuplicated") {
+          throw err;
+        }
+      });
+    }
+  }
 };
 </script>
+
+<style scoped>
+/* Estilos opcionais */
+</style>
+
 
 <style scoped>
 </style>
