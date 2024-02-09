@@ -2,7 +2,7 @@
   <div class="Menu-Principal"> <v-parallax src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
       <div class="d-flex flex-column fill-height justify-center align-center text-white">
         <h1 class="text-h4 font-weight-thin mb-4">
-          Vuetify
+         TOP 10 Animes
         </h1>
         <v-sheet class="bg-deep-purple pa-12" rounded>
           <v-card class="mx-auto px-6 py-8" max-width="344">
@@ -62,8 +62,10 @@ export default {
       event.preventDefault();
       if (!this.isFieldsValidation(this.email, this.password)) alert('Preencher ambos corretamente')
 
-      console.log(this.user[0])
-      const isValidUser = this.user.find(user => user.Email === this.email && user.Password === this.password);
+      
+      const users = JSON.parse(window.localStorage.getItem("users")) || [];
+
+      const isValidUser = users.find(user => user.email === this.email && user.password === this.password);
 
 
       if (isValidUser) {
