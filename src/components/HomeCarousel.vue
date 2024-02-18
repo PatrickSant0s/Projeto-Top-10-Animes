@@ -77,6 +77,6 @@ export default {
   background-color: white;
 }
 h2 {
- margin-bottom: px;
+ margin-bottom: 10px;
 }
 </style>
