@@ -1,15 +1,36 @@
 <template>
-  <v-carousel cycle height="700" hide-delimiter-background show-arrows="hover">
+  <v-carousel cycle height="700"  hide-delimiter-background show-arrows="hover">
     <v-carousel-item v-for="(image, index) in sortedImages" :key="index">
       <v-sheet height="100%">
-        <a :href="image.link" target="_blank" rel="noopener noreferrer" class="carousel-link">
-          <div class="d-flex fill-height justify-center align-center position-relative">
-            <div class="top-rank-container">
-              
-            </div>
-            <img :src="image.src" :alt="image.alt" class="carousel-image" />
-          </div>
-        </a>
+        <div class="d-flex fill-height justify-center align-center "
+             @mouseenter="showVideoCard(index)"
+             @mouseleave="hideVideoCard(index)">
+          <img :src="image.src" :alt="image.alt" class="carousel-image mx-auto"   height="250"  max-width="400"  />
+          
+          <v-card v-if="activeIndex === index" class="video-card" >
+            <!-- Aqui você pode adicionar o código para exibir o vídeo -->
+            <iframe :src="sortedVideos[index].src + '&autoplay=1'" frameborder="0" allowfullscreen height="300" width="100%"></iframe>
+             <v-card-subtitle class="pt-4">
+              <h1>{{image.alt}}</h1>
+      </v-card-subtitle>
+  
+      <v-card-text>
+        <h2>{{ image.temporada }}</h2>
+  
+        <p>{{image.descricao}}</p>
+      </v-card-text>
+  
+      <v-card-actions>
+        <v-btn color="white">
+        Assistir
+        </v-btn>
+  
+        <v-btn color="white">
+          Avaliação
+        </v-btn>
+      </v-card-actions>
+          </v-card>
+        </div>
       </v-sheet>
     </v-carousel-item>
   </v-carousel>
@@ -17,12 +38,23 @@
 
 <script>
 import { images } from '@/utils/GaleriaFotos';
+import { videos } from '@/utils/GaleriaVideos';
 
 export default {
   data() {
     return {
       sortedImages: images.sort((a, b) => a.src.localeCompare(b.src)),
+      sortedVideos: videos.sort((a, b) => a.src.localeCompare(b.src)),
+      activeIndex: null,
     };
+  },
+  methods: {
+    showVideoCard(index) {
+      this.activeIndex = index;
+    },
+    hideVideoCard() {
+      this.activeIndex = null;
+    },
   },
 };
 </script>
@@ -34,36 +66,17 @@ export default {
   border-radius: 16px;
 }
 
-.carousel-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.top-rank-container {
+.video-card {
   position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.top-rank {
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-}
-
-
-.top-rank-container {
-  position: absolute;
-  top: 10px;
-  /* Ajuste a posição conforme necessário */
-  left: 10px;
-  /* Ajuste a posição conforme necessário */
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  transform: translate(-50%, -50%);
   z-index: 1;
+  background-color: white;
 }
-
-.top-rank {
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
+h2 {
+ margin-bottom: px;
 }
 </style>
