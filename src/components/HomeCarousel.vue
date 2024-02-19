@@ -11,7 +11,7 @@
           
           <v-card v-if="activeIndex === index" class="video-card" >
             <!-- Aqui você pode adicionar o código para exibir o vídeo -->
-            <iframe :src="sortedVideos[index].src + '&autoplay=1'" frameborder="0" allowfullscreen height="300" width="100%"></iframe>
+            <iframe :src="sortedVideos[index].src " frameborder="0" allowfullscreen height="300" width="100%"></iframe>
              <v-card-subtitle class="pt-4">
               <h1>{{image.alt}}</h1>
       </v-card-subtitle>
