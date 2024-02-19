@@ -1,5 +1,7 @@
 <template>
+  
   <v-carousel cycle height="700"  hide-delimiter-background show-arrows="hover">
+    <h1>Top 10 animes</h1>
     <v-carousel-item v-for="(image, index) in sortedImages" :key="index">
       <v-sheet height="100%">
         <div class="d-flex fill-height justify-center align-center "
@@ -78,5 +80,9 @@ export default {
 }
 h2 {
  margin-bottom: 10px;
+}
+h1{
+  text-align: center;
+  border: 1px 1px solid white
 }
 </style>
