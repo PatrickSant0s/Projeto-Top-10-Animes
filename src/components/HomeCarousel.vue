@@ -34,11 +34,17 @@
 
               <p>{{ image.descricao }}</p>
             </v-card-text>
+            <v-card-actions class="d-flex flex-column align-center">
+              <div class="text-center mb-2">
+                <v-btn color="white">Assistir</v-btn>
+              </div>
 
-            <v-card-actions>
-              <v-btn color="white"> Assistir </v-btn>
-
-              <v-btn color="white"> Avaliação </v-btn>
+              <div class="text-center">
+                <v-rating
+                  v-model="rating"
+                  item-aria-label="custom icon label text {0} of {1}"
+                ></v-rating>
+              </div>
             </v-card-actions>
           </v-card>
         </div>
@@ -70,6 +76,7 @@ export default {
 
 <style scoped>
 .carousel-image {
+  margin-top: 100px;
   width: 500px;
   height: 500px;
   border-radius: 16px;
@@ -84,7 +91,7 @@ export default {
   transform: translate(-50%, -50%);
   z-index: 1;
   background-color: white;
-  border-radius: 16px ;
+  border-radius: 16px;
 }
 h2 {
   margin-bottom: 10px;
