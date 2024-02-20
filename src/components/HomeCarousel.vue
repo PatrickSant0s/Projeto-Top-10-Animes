@@ -76,7 +76,7 @@ export default {
 
 <style scoped>
 .carousel-image {
-  margin-top: 100px;
+  margin-top: 30px;
   width: 500px;
   height: 500px;
   border-radius: 16px;
