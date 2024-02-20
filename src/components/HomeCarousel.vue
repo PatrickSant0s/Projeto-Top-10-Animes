@@ -84,6 +84,7 @@ export default {
   transform: translate(-50%, -50%);
   z-index: 1;
   background-color: white;
+  border-radius: 16px ;
 }
 h2 {
   margin-bottom: 10px;
