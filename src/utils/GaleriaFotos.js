@@ -10,7 +10,8 @@ export const images = [
       alt: "Naruto Uzumaki",
       link:"https://www.google.com/search?q=assistir+naruto+online&sca_esv=598484351&rlz=1C1UEAD_enBR1087BR1087&sxsrf=ACQVn0_DLsKlyUeqtDM8YE5iqSxOa0ynfA%3A1705295426079&ei=Qr6kZbKuBJzK1sQPxLGQoA0&udm=&ved=0ahUKEwiy1-7A0N6DAxUcpZUCHcQYBNQQ4dUDCBA&uact=5&oq=assistir+naruto+online&gs_lp=Egxnd3Mtd2l6LXNlcnAiFmFzc2lzdGlyIG5hcnV0byBvbmxpbmUyBRAAGIAEMgYQABgHGB5InQdQigRYigRwAXgBkAEAmAF4oAF4qgEDMC4xuAEDyAEA-AEB4gMEGAAgQYgGAQ&sclient=gws-wiz-serp",
       descricao: "Naruto Uzumaki é um ninja hiperativo da Vila Oculta da Folha e membro da equipe 7, filho do Quarto Hokage e Kushina Uzumaki. Logo após seu nascimento, a Raposa de Nove Caudas foi selada dentro dele, mas isso foi mantido em segredo por anos.",
-      temporada: "9 Temporadas"
+      temporada: "9 Temporadas",
+      videos: "https://pa1.aminoapps.com/6857/f2721f12187178445d1f945d10a0a9c15d4e11f5_hq.gif"
     },
     {
       src: "https://media.fstatic.com/VbBR-NYgR-Z0HsqtpOQunErVJ-0=/322x478/smart/filters:format(webp)/media/movies/covers/2020/05/Aq5af62w7eQlqjK6vgpEbFA8Z2b.jpg",
@@ -31,7 +32,8 @@ export const images = [
       alt: "Pokémon",
       link:"https://www.youtube.com/watch?v=SSViT336Vq4&list=PL5Yff77BRE_rJQkYlaIOYVOgJv1jRr9d2",
       descricao: "Depois que ele completa 10 anos, Ash Ketchum (Satoshi no Japão) tem permissão para começar sua jornada no mundo dos Pokémon e sonha em se tornar um Mestre Pokémon. No dia em que ele receberia seu primeiro Pokémon, Ash acorda em pânico, tendo dormido demais por ter assistido uma batalha de Pokémon na noite anterior. O Professor Samuel Carvalho (Dr. Yukinari Okido em japonês e Professor Samuel Oak em inglês), o pesquisador local de Pokémon, já tinha doado os três últimos Pokémon iniciais de Kanto (Bulbasaur, Charmander e Squirtle) a novos Treinadores Pokémon quando Ash finalmente chegou atrasado ao Laboratório de Carvalho. O único Pokémon que ele tinha então era um Pikachu, que ele dá para Ash.",
-      temporada: "8 Temporadas"
+      temporada: "8 Temporadas",
+      gif: "https://i.pinimg.com/originals/8a/81/ec/8a81ecd8fdd266b3221da325875c0ea8.gif"
     },
     {
       src: "https://static.anroll.net/images/animes/capas/digimon-frontier.jpg",

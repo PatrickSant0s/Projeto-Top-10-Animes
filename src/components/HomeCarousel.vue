@@ -11,7 +11,7 @@
           
           <v-card v-if="activeIndex === index" class="video-card" >
             <!-- Aqui você pode adicionar o código para exibir o vídeo -->
-            <iframe :src="sortedVideos[index].src " frameborder="0" allowfullscreen height="300" width="100%"></iframe>
+            <img :src="image.gif" :alt="image.alt" class="gifCard"   height="200"  max-width="1000"  />
              <v-card-subtitle class="pt-4">
               <h1>{{image.alt}}</h1>
       </v-card-subtitle>
@@ -40,13 +40,12 @@
 
 <script>
 import { images } from '@/utils/GaleriaFotos';
-import { videos } from '@/utils/GaleriaVideos';
+
 
 export default {
   data() {
     return {
       sortedImages: images.sort((a, b) => a.src.localeCompare(b.src)),
-      sortedVideos: videos.sort((a, b) => a.src.localeCompare(b.src)),
       activeIndex: null,
     };
   },
@@ -84,5 +83,9 @@ h2 {
 h1{
   text-align: center;
   border: 1px 1px solid white
+}
+
+.gifCard  {
+  width: 100%;
 }
 </style>
