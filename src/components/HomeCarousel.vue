@@ -1,36 +1,45 @@
 <template>
-  
-  <v-carousel cycle height="700"  hide-delimiter-background show-arrows="hover">
+  <v-carousel cycle height="700" hide-delimiter-background show-arrows="hover">
     <h1>Top 10 animes</h1>
     <v-carousel-item v-for="(image, index) in sortedImages" :key="index">
       <v-sheet height="100%">
-        <div class="d-flex fill-height justify-center align-center "
-             @mouseenter="showVideoCard(index)"
-             @mouseleave="hideVideoCard(index)">
-          <img :src="image.src" :alt="image.alt" class="carousel-image mx-auto"   height="250"  max-width="400"  />
-          
-          <v-card v-if="activeIndex === index" class="video-card" >
+        <div
+          class="d-flex fill-height justify-center align-center"
+          @mouseenter="showVideoCard(index)"
+          @mouseleave="hideVideoCard(index)"
+        >
+          <img
+            :src="image.src"
+            :alt="image.alt"
+            class="carousel-image mx-auto"
+            height="250"
+            max-width="400"
+          />
+
+          <v-card v-if="activeIndex === index" class="video-card">
             <!-- Aqui você pode adicionar o código para exibir o vídeo -->
-            <img :src="image.gif" :alt="image.alt" class="gifCard"   height="200"  max-width="1000"  />
-             <v-card-subtitle class="pt-4">
-              <h1>{{image.alt}}</h1>
-      </v-card-subtitle>
-  
-      <v-card-text>
-        <h2>{{ image.temporada }}</h2>
-  
-        <p>{{image.descricao}}</p>
-      </v-card-text>
-  
-      <v-card-actions>
-        <v-btn color="white">
-        Assistir
-        </v-btn>
-  
-        <v-btn color="white">
-          Avaliação
-        </v-btn>
-      </v-card-actions>
+            <img
+              :src="image.gif"
+              :alt="image.alt"
+              class="gifCard"
+              height="200"
+              max-width="1000"
+            />
+            <v-card-subtitle class="pt-4">
+              <h1>{{ image.alt }}</h1>
+            </v-card-subtitle>
+
+            <v-card-text>
+              <h2>{{ image.temporada }}</h2>
+
+              <p>{{ image.descricao }}</p>
+            </v-card-text>
+
+            <v-card-actions>
+              <v-btn color="white"> Assistir </v-btn>
+
+              <v-btn color="white"> Avaliação </v-btn>
+            </v-card-actions>
           </v-card>
         </div>
       </v-sheet>
@@ -39,8 +48,7 @@
 </template>
 
 <script>
-import { images } from '@/utils/GaleriaFotos';
-
+import { images } from "@/utils/GaleriaFotos";
 
 export default {
   data() {
@@ -78,14 +86,15 @@ export default {
   background-color: white;
 }
 h2 {
- margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-h1{
+h1 {
   text-align: center;
-  border: 1px 1px solid white
+  border: 1px 1px solid white;
 }
 
-.gifCard  {
+.gifCard {
   width: 100%;
+  height: 250px;
 }
 </style>
