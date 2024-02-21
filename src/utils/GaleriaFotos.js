@@ -2,7 +2,7 @@ export const images = [
   {
     src: "https://ptanime.com/wp-content/uploads/2021/09/One-Piece-Volume-100_-3-de-setembro-2021-644x1024.jpg",
     alt: "One Piece",
-    link: "https://www.google.com/search?q=assistir+one+piece+online&sca_esv=598484351&rlz=1C1UEAD_enBR1087BR1087&sxsrf=ACQVn09TgTOMRnxITrHyJK2peUWS26Ms-w%3A1705295074108&ei=4rykZciaBsXT1sQPj4aMwAE&udm=&ved=0ahUKEwjIk4SZz96DAxXFqZUCHQ8DAxgQ4dUDCBA&uact=5&oq=assistir+one+piece+online&gs_lp=Egxnd3Mtd2l6LXNlcnAiGWFzc2lzdGlyIG9uZSBwaWVjZSBvbmxpbmUyChAjGIAEGIoFGCdIzAZQggVYggVwAHgBkAEAmAF2oAHcAaoBAzAuMrgBA8gBAPgBAcICBBAAGEfiAwQYACBBiAYBkAYI&sclient=gws-wiz-serp#vhid=PfIswnz929y3EM:&vssid=l",
+    link: "https://www.youtube.com/watch?v=Qno808u9NEY",
     descricao:
       "A trama segue Luffy, um jovem com o corpo elástico que sonha em criar sua própria tripulação e partir em uma aventura para se tornar o próximo Rei dos Piratas. Ao todo, a produção tem oito episódios de cerca de uma hora de duração cada, já disponíveis no catálogo da Netflix.",
     temporada: "20 Temporadas",
@@ -13,8 +13,7 @@ export const images = [
   {
     src: "https://i.pinimg.com/474x/0f/14/43/0f14432778f5435ab82f2801d250bcea.jpg",
     alt: "Naruto Uzumaki",
-    link: "https://www.google.com/search?q=assistir+naruto+online&sca_esv=598484351&rlz=1C1UEAD_enBR1087BR1087&sxsrf=ACQVn0_DLsKlyUeqtDM8YE5iqSxOa0ynfA%3A1705295426079&ei=Qr6kZbKuBJzK1sQPxLGQoA0&udm=&ved=0ahUKEwiy1-7A0N6DAxUcpZUCHcQYBNQQ4dUDCBA&uact=5&oq=assistir+naruto+online&gs_lp=Egxnd3Mtd2l6LXNlcnAiFmFzc2lzdGlyIG5hcnV0byBvbmxpbmUyBRAAGIAEMgYQABgHGB5InQdQigRYigRwAXgBkAEAmAF4oAF4qgEDMC4xuAEDyAEA-AEB4gMEGAAgQYgGAQ&sclient=gws-wiz-serp",
-    
+    link: "https://www.youtube.com/watch?v=AhG2dKqunLQ&t=12s",
     descricao:
       "Naruto Uzumaki é um ninja hiperativo da Vila Oculta da Folha e membro da equipe 7, filho do Quarto Hokage e Kushina Uzumaki. Logo após seu nascimento, a Raposa de Nove Caudas foi selada dentro dele, mas isso foi mantido em segredo por anos.",
     temporada: "9 Temporadas",
@@ -36,7 +35,7 @@ export const images = [
   {
     src: "https://i.pinimg.com/originals/ca/e4/13/cae413ad4fdadf85d1505a579a604cd2.jpg",
     alt: "Dragon Ball Z",
-    link: "https://www.youtube.com/watch?v=HNY3rlgfxvA",
+    link: "https://www.youtube.com/watch?v=EzN5SW2QOWY&list=PL-QeKcXki44guOnuBGWoZEMRA8BNtxVRC",
     descricao:
       "Criada por Akira Toryiama, a franquia conta a história de Son Goku, guerreiro que descobre ser parte de um legado de poderosos conquistadores alienígenas - e passa a defender seu planeta adotivo, a Terra, de outros seres igualmente superfortes e capazes de feitos descomunais.",
     temporada: "9 Temporadas",
@@ -69,13 +68,12 @@ export const images = [
   {
     src: "https://media.fstatic.com/7OMrqr6xNVh8B6q6HBasBsFQpL0=/322x478/smart/filters:format(webp)/media/movies/covers/2019/08/Capa.jpg",
     alt: "Demons Slayer",
-    link: "https://www.youtube.com/watch?v=j1MbV2o_qME",
+    link: "https://www.youtube.com/watch?v=IX1aSD_pZh0",
     descricao:
       "Em Kimetsu no Yaiba, Tanjiro, um bondoso jovem que ganha a vida vendendo carvão descobre que sua família foi massacrada por um demônio. E, para piorar, Nezuko, sua irmã mais nova e única sobrevivente, também acabou transformada em um demônio.",
     temporada: "4 Temporadas",
     gif: "https://i.makeagif.com/media/6-02-2023/zHdFsZ.gif",
     rank: "https://www.netflix.com/tudum/top10/images/big_numbers/3.png",
-    
   },
 
   {

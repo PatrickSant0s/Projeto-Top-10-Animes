@@ -19,7 +19,6 @@
           />
 
           <v-card v-if="activeIndex === index" class="video-card">
-           
             <img
               :src="image.gif"
               :alt="image.alt"
@@ -38,7 +37,9 @@
             </v-card-text>
             <v-card-actions class="d-flex flex-column align-center">
               <div class="text-center mb-2">
-                <v-btn color="white">Assistir</v-btn>
+                <a :href="image.link" target="_blank">
+                  <v-btn color="white">Assistir</v-btn>
+                </a>
               </div>
 
               <div class="text-center">
@@ -71,6 +72,9 @@ export default {
     },
     hideVideoCard() {
       this.activeIndex = null;
+    },
+    assistir(link) {
+      window.location.href = link;
     },
   },
 };
