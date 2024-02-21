@@ -73,8 +73,7 @@ export default {
 
       // Atualizar a lista de usuários no localStorage
       window.localStorage.setItem("users", JSON.stringify(existingUsers));
-
-      // Limpar os campos do formulário
+      
       this.firstName = "";
       this.lastName = "";
       this.email = "";

@@ -4,20 +4,22 @@
     <v-carousel-item v-for="(image, index) in sortedImages" :key="index">
       <v-sheet height="100%">
         <div
-          class="d-flex fill-height justify-center align-center"
+          class="d-flex justify-center align-center"
           @mouseenter="showVideoCard(index)"
           @mouseleave="hideVideoCard(index)"
         >
+          <img :src="image.rank" class="image" height="450" max-width="100" />
+
           <img
             :src="image.src"
             :alt="image.alt"
-            class="carousel-image mx-auto"
-            height="250"
-            max-width="400"
+            class="carousel-image"
+            height="400"
+            max-width="00"
           />
 
           <v-card v-if="activeIndex === index" class="video-card">
-            <!-- Aqui você pode adicionar o código para exibir o vídeo -->
+           
             <img
               :src="image.gif"
               :alt="image.alt"
@@ -76,8 +78,8 @@ export default {
 
 <style scoped>
 .carousel-image {
-  margin-top: 30px;
-  width: 500px;
+  margin-top: 50px;
+  width: 450px;
   height: 500px;
   border-radius: 16px;
 }
@@ -85,7 +87,7 @@ export default {
 .video-card {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 61%;
   width: 600px;
   height: 600px;
   transform: translate(-50%, -50%);
