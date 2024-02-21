@@ -79,12 +79,16 @@ export default {
       this.email = "";
       this.password = "";
 
-      // Redirecionar para a página de login
-      this.$router.push("/login").catch(err => {
-        if (err.name !== "NavigationDuplicated") {
-          throw err;
-        }
-      });
+      setTimeout(() => {
+        alert("Registro realizado com sucesso!");
+        
+        // Redirecionar para a página de login
+        this.$router.push("/login").catch(err => {
+          if (err.name !== "NavigationDuplicated") {
+            throw err;
+          }
+        });
+      }, 100); 
     }
   }
 };
