@@ -7,6 +7,7 @@
           color="primary"
           label="First name"
           variant="underlined"
+          :error-messages="firstNameErrorMessage"
         ></v-text-field>
 
         <v-text-field
@@ -14,6 +15,7 @@
           color="primary"
           label="Last name"
           variant="underlined"
+          :error-messages="lastNameErrorMessage"
         ></v-text-field>
 
         <v-text-field
@@ -21,6 +23,7 @@
           color="primary"
           label="Email"
           variant="underlined"
+          :error-messages="emailErrorMessage"
         ></v-text-field>
 
         <v-text-field
@@ -29,6 +32,7 @@
           label="Password"
           placeholder="Enter your password"
           variant="underlined"
+          :error-messages="passwordErrorMessage"
         ></v-text-field>
       </v-container>
 
@@ -54,11 +58,29 @@ export default {
       email: "",
       firstName: "",
       lastName: "",
-      password: ""
+      password: "",
+      firstNameErrorMessage: "",
+      lastNameErrorMessage: "",
+      emailErrorMessage: "",
+      passwordErrorMessage: ""
     };
   },
   methods: {
+    validateEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    },
     registerUser() {
+      if (this.firstName.length < 3 || this.lastName.length < 3) {
+        this.firstNameErrorMessage = "O nome e o sobrenome devem ter pelo menos 3 caracteres.";
+        return;
+      }
+
+      if (!this.validateEmail(this.email)) {
+        this.emailErrorMessage = "Por favor, insira um email válido.";
+        return;
+      }
+
       const newUser = {
         firstName: this.firstName,
         lastName: this.lastName,
@@ -67,28 +89,30 @@ export default {
         status: "Cadastrado"
       };
 
-      // Obter usuários existentes do localStorage
       const existingUsers = JSON.parse(window.localStorage.getItem("users")) || [];
       existingUsers.push(newUser);
-
-      // Atualizar a lista de usuários no localStorage
       window.localStorage.setItem("users", JSON.stringify(existingUsers));
-      
+
       this.firstName = "";
       this.lastName = "";
       this.email = "";
       this.password = "";
+      this.clearErrorMessages();
 
       setTimeout(() => {
         alert("Registro realizado com sucesso!");
-        
-        // Redirecionar para a página de login
         this.$router.push("/login").catch(err => {
           if (err.name !== "NavigationDuplicated") {
             throw err;
           }
         });
-      }, 100); 
+      }, 100);
+    },
+    clearErrorMessages() {
+      this.firstNameErrorMessage = "";
+      this.lastNameErrorMessage = "";
+      this.emailErrorMessage = "";
+      this.passwordErrorMessage = "";
     }
   }
 };
@@ -96,8 +120,4 @@ export default {
 
 <style scoped>
 /* Estilos opcionais */
-</style>
-
-
-<style scoped>
 </style>
