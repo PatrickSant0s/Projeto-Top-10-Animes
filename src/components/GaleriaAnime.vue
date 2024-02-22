@@ -2,28 +2,58 @@
   <div class="galeriaFotos">
     <h1 class="titulo-galeria">Galeria de Anime</h1>
     <ul class="navegacao-fotos">
-      <!-- Adicione um link ao redor de cada imagem -->
-      <li class="fotos" v-for="foto in galeriaImages" :key="foto.src">
-        <a :href="foto.link" target="_blank" rel="noopener noreferrer">
-          <img :src="foto.src" :alt="foto.alt" class="img" :style="{ backgroundImage: `url(${foto.src})` }">
-        </a>
+      <li class="fotos" v-for="(foto, index) in galeriaImages" :key="index">
+        <div 
+          @mouseenter="showGif(index)" 
+          @mouseleave="hideGif()"
+          class="foto-container"
+        >
+          <img 
+            v-if="!isActive(index)"
+            :src="foto.src" 
+            :alt="foto.alt" 
+            class="img" 
+          >
+          <img 
+            v-if="isActive(index)"
+            :src="foto.gif" 
+            :alt="foto.alt" 
+            class="img" 
+          >
+          <div v-if="isActive(index)" class="card">
+            <a :href="foto.link" target="_blank">Assistir</a>
+          </div>
+        </div>
       </li>
     </ul>
   </div>
 </template>
-  
+
 <script>
 import { images } from '@/utils/GaleriaFotos';
 
 export default {
   name: "GaleriaAnime",
-  computed: {
-    galeriaImages() {
-      return images;
+  data() {
+    return {
+      galeriaImages: images,
+      activeIndex: null
+    };
+  },
+  methods: {
+    showGif(index) {
+      this.activeIndex = index;
+    },
+    hideGif() {
+      this.activeIndex = null;
+    },
+    isActive(index) {
+      return this.activeIndex === index;
     }
   }
 }
 </script>
+
 <style scoped>
 .titulo-galeria {
   padding: 100px 0 40px 0;
@@ -40,11 +70,9 @@ export default {
   width: 243px;
   height: 242px;
   border-radius: 16px;
-
 }
 
 .galeriaFotos {
-
   height: auto;
   width: 100%;
 }
@@ -60,16 +88,12 @@ export default {
   font-style: normal;
 }
 
-.galeriaFotos img {
-
-
-}
+.galeriaFotos img {}
 
 .navegacao-fotos {
   display: grid;
   grid-template-columns: repeat(7, 250px);
   grid-template-rows: 2;
-
   gap: 20px;
 }
 
@@ -79,9 +103,24 @@ export default {
   border-radius: 16px;
 }
 
-.img:hover {
-  width: 300px;
-  
-  transition: 1s;
+.foto-container {
+  position: relative;
+}
+
+.card {
+  position: absolute;
+  top: 75%;
+  left: 5%;
+
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: none;
+}
+
+.foto-container:hover .card {
+  display: block;
 }
 </style>
