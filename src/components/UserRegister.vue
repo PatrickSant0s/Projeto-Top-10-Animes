@@ -80,6 +80,10 @@ export default {
         this.emailErrorMessage = "Por favor, insira um email válido.";
         return;
       }
+      if (this.password.length < 3 || !/[!@#$%^&*(),.?":{}|<>]/.test(this.password)) {
+        this.passwordErrorMessage = "A senha deve ter pelo menos 3 caracteres e conter um caractere especial.";
+        return;
+      }
 
       const newUser = {
         firstName: this.firstName,
