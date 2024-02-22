@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { images } from '@/utils/GaleriaFotos';
+import { images } from '@/utils/GaleriaGif';
 
 export default {
   name: "GaleriaAnime",
