@@ -1,7 +1,5 @@
 <template>
   <div class="Background"><v-app>
-    <MenuBar />
-
     <v-main>
       <router-view />
     </v-main>
@@ -13,10 +11,10 @@
 
 
 import { users } from "./utils/Users";
-import MenuBar from "@/components/MenuBar.vue";
+
 export default {
   name: "App",
-  components: { MenuBar },
+  components: {  },
 
 
   computed: {

@@ -6,6 +6,7 @@ const Contactpage = () => import("../views/ContactPage.vue");
 const LoginPage = () => import("../views/LoginPage.vue");
 const RegisterPage = () => import("../views/RegisterPage.vue")
 const GaleriaPage = () => import("../views/GaleriaPage.vue");
+const PerfilPage = () => import("../views/PerfilPage.vue");
 
 
 Vue.use(VueRouter);
@@ -16,6 +17,7 @@ const routes = [
   { path: "/login", component: LoginPage, name: "LoginPage" },
   { path: "/register", component: RegisterPage, name: "RegisterPage" },
   { path: "/galeria", component: GaleriaPage, name: "GaleriaPage" },
+  { path: "/perfil", component: PerfilPage, name: "PerfilPage" },
   
 ];
 

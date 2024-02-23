@@ -1,13 +1,19 @@
 <template>
-    <div>Fale comigo</div>
+   <PerfilAnime></PerfilAnime>
 
 </template>
 
 
 
 <script>
+
+import PerfilAnime from "@/components/PerfilAnime.vue"
+
+
 export default{
-    name:"ContactPage"
+  components: { PerfilAnime },
+    name:"ContactPage",
+    computed:{PerfilAnime}
 }
 </script>
 

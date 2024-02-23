@@ -1,5 +1,7 @@
 <template>
-  <div><UserLogin/></div>
+  <div>
+    <MenuBar/>
+    <UserLogin/></div>
 </template>
 
 
@@ -8,10 +10,10 @@
 
 import UserLogin from '@/components/UserLogin.vue';
 
-
+import MenuBar from "@/components/MenuBar.vue";
 
 export default {
-  components: { UserLogin },
+  components: { UserLogin, MenuBar },
     name:"LoginPage",
     methods: {
         alreadyExistsUser() {
