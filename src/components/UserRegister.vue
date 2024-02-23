@@ -1,5 +1,5 @@
 <template>
-  <div class="Menu-Principal">
+  <div class="Registro">
     <v-card class="mx-auto" max-width="344" title="User Registration">
       <v-container id="register-form">
         <v-text-field
@@ -123,5 +123,7 @@ export default {
 </script>
 
 <style scoped>
-/* Estilos opcionais */
+.Registro{ 
+  
+}
 </style>

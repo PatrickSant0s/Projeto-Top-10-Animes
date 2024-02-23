@@ -84,7 +84,7 @@ export default {
   font-size: 55px;
   font-weight: 40;
   text-transform: uppercase;
-  color: var(--color-principal);
+  color: black;
   font-style: normal;
 }
 
