@@ -1,28 +1,41 @@
 <template>
   <main>
-    <div v-if="personagens.length > 0">
-      <img class="imagem" :src="personagens[0].imagem" :alt="personagens[0].nome" />
+    <div>
+      <img
+        class="imagem"
+        :src="anime.imagem"
+        :alt="anime.nome"
+      />
       <div class="conteudo">
-        <i class="logo"><img :src="personagens[0].logo" alt="" /></i>
-        <h2 class="personagem">{{ personagens[0].nome }}</h2>
-        <p class="descricao">{{ personagens[0].descricao }}</p>
+        <i class="logo"><img :src="anime.logo" alt="" /></i>
+        <h2 class="personagem">{{ anime.nome }}</h2>
+        <p class="descricao">{{ anime.descricao }}</p>
       </div>
-    </div>
-    <div v-else>
-      <p>Nenhum personagem encontrado.</p>
     </div>
   </main>
 </template>
 <script>
-import { personagens } from "@/utils/GaleriaPerfil"; 
+import { animes } from "@/utils/GaleriaPerfil";
 
 export default {
-  name: 'PerfilAnime',
+  name: "PerfilAnime",
   data() {
     return {
-      personagens: personagens 
+     
     };
-  }
+  },
+  computed: {
+      paramsId() {
+        return this.$route.params.id
+      },
+     anime() {
+      return  animes.find((item) => item.id == this.paramsId)
+     }
+  },
+  mounted() {
+    console.log(animes);
+    
+  },
 };
 </script>
 
@@ -44,7 +57,7 @@ main::after {
 
 .personagem {
   display: flex; /* Adiciona um display flex para alinhar os itens dentro do container */
-  justify-content: flex-end; /* Alinha os itens para o final do container, no lado direito */
+  justify-content: flex-start; /* Alinha os itens para o final do container, no lado direito */
 }
 
 .imagem {

@@ -1,4 +1,4 @@
-  export const  personagens = [
+  export const  animes = [
     {
       id: 1,
       imagem: "https://i.pinimg.com/originals/83/a9/f6/83a9f6bbc742a977b87c4fe14fa1fef2.jpg",
@@ -36,11 +36,11 @@
     {
       id: 5,
       imagem:
-        "https://w.forfun.com/fetch/ab/ab59e381aae1a325b7c796f9b3c966e5.jpeg",
-      nome: "Inu yasha",
+        "https://images7.alphacoders.com/297/297032.jpg",
+      nome: "Digimon 4",
       descricao:
-        "InuYasha (犬夜叉), também conhecido como Inuyasha: Um Conto de Fadas Feudal (戦国御伽草子 犬夜叉 Sengoku Otogizōshi InuYasha), é uma série de mangá shōnen escrita e ilustrada por Rumiko Takahashi. Foi publicada na revista Weekly Shōnen Sunday entre 13 de novembro de 1996 e 18 de junho de 2008, totalizando 56 volumes tankōbon.",
-      logo: "https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABdsrzPrNTNDCRY2AyvvUGLszD3THGX1xKLvXWW9fCCIq1rEbVTmEBh3G-ZGgaZlPFtfqqDmxADp4vWOVc0QYK4febTGX2skPYYUD4KPJiLnB.png?r=a54",
+        "A história acompanha um grupo de crianças que são levadas ao Digimundo, um mundo digital habitado por criaturas conhecidas como Digimon. Lá, elas devem juntar-se às criaturas e lutar contra um mal iminente que ameaça o mundo paralelo",
+      logo: "https://i.ytimg.com/vi/Dd-rd3y6KUg/hqdefault.jpg",
     },
     {
       id: 6,

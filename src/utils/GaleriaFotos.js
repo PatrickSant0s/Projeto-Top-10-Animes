@@ -8,6 +8,7 @@ export const images = [
     temporada: "20 Temporadas",
     gif: "https://i.pinimg.com/originals/71/36/26/7136261341c8133bd2b68b188055bf06.gif",
     rank: "https://www.netflix.com/tudum/top10/images/big_numbers/7.png",
+    id: 8,
   },
 
   {
@@ -19,6 +20,7 @@ export const images = [
     temporada: "9 Temporadas",
     gif: "https://i.pinimg.com/originals/61/b5/c3/61b5c31b0ed70fc8aacd9eaa511c2949.gif",
     rank: "https://www.netflix.com/tudum/top10/images/big_numbers/1.png",
+    id: 1,
   },
 
   {
@@ -30,6 +32,7 @@ export const images = [
     temporada: "1 Temporadas",
     gif: "https://i.gifer.com/8Kpp.gif",
     rank: "https://www.netflix.com/tudum/top10/images/big_numbers/5.png",
+    id: 6,
   },
 
   {
@@ -41,6 +44,7 @@ export const images = [
     temporada: "9 Temporadas",
     gif: "https://media1.tenor.com/m/Z3DYCffBSt4AAAAC/super-saiyan3-goku.gif",
     rank: "https://www.netflix.com/tudum/top10/images/big_numbers/2.png",
+    id: 2,
   },
 
   {
@@ -52,6 +56,7 @@ export const images = [
     temporada: "8 Temporadas",
     gif: "https://i.pinimg.com/originals/8a/81/ec/8a81ecd8fdd266b3221da325875c0ea8.gif",
     rank: "https://www.netflix.com/tudum/top10/images/big_numbers/6.png",
+    id: 7,
   },
 
   {
@@ -59,10 +64,11 @@ export const images = [
     alt: "Digimon 4 ",
     link: "https://www.youtube.com/watch?v=4gV24yiLiwQ",
     descricao:
-      "Em Kimetsu no Yaiba, Tanjiro, um bondoso jovem que ganha a vida vendendo carvão descobre que sua família foi massacrada por um demônio. E, para piorar, Nezuko, sua irmã mais nova e única sobrevivente, também acabou transformada em um demônio.",
+      "A história acompanha um grupo de crianças que são levadas ao Digimundo, um mundo digital habitado por criaturas conhecidas como Digimon. Lá, elas devem juntar-se às criaturas e lutar contra um mal iminente que ameaça o mundo paralelo",
     temporada: "4 Temporadas",
     gif: "https://i.pinimg.com/originals/cd/0e/c8/cd0ec868095e60f8b688163619d29654.gif",
     rank: "https://www.netflix.com/tudum/top10/images/big_numbers/8.png",
+    id: 5,
   },
 
   {
@@ -74,6 +80,7 @@ export const images = [
     temporada: "4 Temporadas",
     gif: "https://i.makeagif.com/media/6-02-2023/zHdFsZ.gif",
     rank: "https://www.netflix.com/tudum/top10/images/big_numbers/3.png",
+    id: 3,
   },
 
   {
@@ -85,6 +92,7 @@ export const images = [
     temporada: "2 Temporadas",
     gif: "https://i.makeagif.com/media/9-09-2021/Yo9pTl.gif",
     rank: "https://www.netflix.com/tudum/top10/images/big_numbers/10.png",
+    id: 10,
   },
 
   {
@@ -96,6 +104,7 @@ export const images = [
     temporada: "3 Temporadas",
     gif: "https://i.pinimg.com/originals/f6/1c/c3/f61cc3ff83a4ef755b6d53a782460189.gif",
     rank: "https://www.netflix.com/tudum/top10/images/big_numbers/9.png",
+    id: 9,
   },
 
   {
@@ -107,5 +116,6 @@ export const images = [
     temporada: "7 Temporadas",
     gif: "https://www.icegif.com/wp-content/uploads/2022/04/icegif-172.gif",
     rank: "https://www.netflix.com/tudum/top10/images/big_numbers/4.png",
+    id: 4,
   },
 ];

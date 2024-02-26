@@ -75,7 +75,7 @@ export default {
     irParaPerfil(id) {
       const routeName = this.$route.name;
       if (routeName !== "PerfilAnime" || this.$route.params.id !== id) {
-        this.$router.push({ name: "PerfilAnime", params: { id: id } });
+        this.$router.push(`/perfil-anime/${id}`);
       }
     },
   },
