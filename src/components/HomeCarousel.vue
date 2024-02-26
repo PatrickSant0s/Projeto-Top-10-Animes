@@ -32,14 +32,13 @@
 
             <v-card-text>
               <h2>{{ image.temporada }}</h2>
-
               <p>{{ image.descricao }}</p>
             </v-card-text>
             <v-card-actions class="d-flex flex-column align-center">
               <div class="text-center mb-2">
-                <a :href="image.link" target="_blank">
-                  <v-btn color="white">Assistir</v-btn>
-                </a>
+                <v-btn color="white" @click="irParaPerfil(image.id)"
+                  >Perfil</v-btn
+                >
               </div>
 
               <div class="text-center">
@@ -73,8 +72,11 @@ export default {
     hideVideoCard() {
       this.activeIndex = null;
     },
-    assistir(link) {
-      window.location.href = link;
+    irParaPerfil(id) {
+      const routeName = this.$route.name;
+      if (routeName !== "PerfilAnime" || this.$route.params.id !== id) {
+        this.$router.push({ name: "PerfilAnime", params: { id: id } });
+      }
     },
   },
 };
