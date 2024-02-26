@@ -17,7 +17,7 @@ export default {
 
 <style scoped>
 .galeria {
-  background-image: url(https://www.pixground.com/wp-content/uploads/2023/09/Sunset-Anime-Comet-Stars-AI-Generated-4K-Wallpaper-1.jpg);
+background-color: black;
   background-size: 100% 100%;
   color: white;
 }
