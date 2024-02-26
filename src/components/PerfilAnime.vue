@@ -4,7 +4,7 @@
       <img class="imagem" :src="personagens[0].imagem" :alt="personagens[0].nome" />
       <div class="conteudo">
         <i class="logo"><img :src="personagens[0].logo" alt="" /></i>
-        <h2 class="nome-anime">{{ personagens[0].nome }}</h2>
+        <h2 class="personagem">{{ personagens[0].nome }}</h2>
         <p class="descricao">{{ personagens[0].descricao }}</p>
       </div>
     </div>
@@ -66,7 +66,7 @@ main::after {
   z-index: 1;
 }
 
-.conteudo .nome-personagem {
+.conteudo .personagem {
   color: #ffffff;
   font-size: 48px;
   font-family: "Secular One";
