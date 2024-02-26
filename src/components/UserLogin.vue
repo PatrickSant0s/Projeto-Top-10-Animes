@@ -1,7 +1,7 @@
 <template>
-  <div class="Menu-Principal"> <v-parallax src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
-      <div class="d-flex flex-column fill-height justify-center align-center text-white">
-        <h1 class="text-h4 font-weight-thin mb-4">
+  <div class="Menu-Principal">
+      <div class="d-flex flex-column fill-height justify-center align-center text-white " style="padding-right: 200px;">
+        <h1 class="text-h4 font-weight-thin mb-4 titulo">
          TOP 10 Animes
         </h1>
         <v-sheet class="bg-deep-purple pa-12" rounded>
@@ -24,7 +24,6 @@
         </v-sheet>
 
       </div>
-    </v-parallax>
 
 
   </div>
@@ -94,3 +93,21 @@ export default {
   },
 };
 </script>
+
+
+<style scoped>
+
+.titulo {
+  padding: 100px 0 40px 0;
+  text-align: center;
+  padding: 100px 0 40px 0;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Secular One";
+  font-weight: 400;
+ 
+
+}
+
+  
+</style>

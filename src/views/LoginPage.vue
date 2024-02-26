@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="login">
     <MenuBar/>
     <UserLogin/></div>
 </template>
@@ -27,3 +27,13 @@ export default {
 
 </script>
 
+<style scoped>
+.login {
+  background-image: url(https://img.freepik.com/fotos-premium/garota-de-anime-assistindo-a-ilustracao-3d-do-por-do-sol_717906-1415.jpg?w=2000);
+  background-size: cover; 
+  background-position: top; 
+  height: 100vh;
+  color: white;
+  font-family: "Secular One";
+}
+</style>
