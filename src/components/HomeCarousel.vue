@@ -1,8 +1,8 @@
 <template>
-  <v-carousel cycle height="700" hide-delimiter-background show-arrows="hover">
-    <h1>Top 10 animes</h1>
+  <v-carousel cycle height="100vh">
+    <h1 class="titulo">Top 10 animes</h1>
     <v-carousel-item v-for="(image, index) in sortedImages" :key="index">
-      <v-sheet height="100%">
+      <v-sheet height="100%" style="background-color: black">
         <div
           class="d-flex justify-center align-center"
           @mouseenter="showVideoCard(index)"
@@ -92,7 +92,7 @@ export default {
 
 .video-card {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 61%;
   width: 600px;
   height: 600px;
@@ -104,9 +104,13 @@ export default {
 h2 {
   margin-bottom: 10px;
 }
-h1 {
+.titulo {
   text-align: center;
-  border: 1px 1px solid white;
+color: white;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Secular One";
+  font-weight: 400;
 }
 
 .gifCard {

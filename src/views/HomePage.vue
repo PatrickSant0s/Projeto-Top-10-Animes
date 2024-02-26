@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     
     <MenuBar/>
     <HomeCarousel />
@@ -18,4 +18,11 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.home {background-color: black;
+ color: white;
+
+}
+
+
+</style>
