@@ -1,19 +1,19 @@
 <template>
-  <div></div>
-</template>
+  <PerfilAnime></PerfilAnime>
 
+</template>
 
 
 
 <script>
 
-    export default{
-
-
-    }
+import PerfilAnime from "@/components/PerfilAnime.vue"
+export default{
+ components: { PerfilAnime },
+   name:"PerfilPage",
+  
+}
 </script>
-
-
 
 
 <style scoped>

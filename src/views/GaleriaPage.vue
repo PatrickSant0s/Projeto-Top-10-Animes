@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="galeria">
     <MenuBar/>
-    <GaleriaAnime />
+    <GaleriaAnime  class="menuBar"/>
   </div>
 </template>
 
@@ -15,4 +15,10 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.galeria {
+background-color: black;
+color: white;
+}
+
+</style>

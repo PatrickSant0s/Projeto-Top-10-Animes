@@ -1,15 +1,14 @@
 <template>
-   <PerfilAnime></PerfilAnime>
-
+  
+<div></div>
 </template>
 
 
 
 <script>
 
-import PerfilAnime from "@/components/PerfilAnime.vue"
+
 export default{
-  components: { PerfilAnime },
     name:"ContactPage",
    
 }
