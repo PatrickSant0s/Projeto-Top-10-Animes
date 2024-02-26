@@ -1,8 +1,8 @@
 <template>
   <div class="Menu-Principal">
-      <div class="d-flex flex-column fill-height justify-center align-center text-white " style="padding-right: 200px;">
-        <h1 class="text-h4 font-weight-thin mb-4 titulo">
-         TOP 10 Animes
+      <div class="d-flex flex-column fill-height justify-center align-center text-white pt-16" style="padding-right: 200px;">
+        <h1 class="text-h4 font-weight-thin mb-4 ">
+         Login
         </h1>
         <v-sheet class="bg-deep-purple pa-12" rounded>
           <v-card class="mx-auto px-6 py-8" max-width="344">
