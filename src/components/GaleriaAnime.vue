@@ -55,9 +55,6 @@ export default {
 </script>
 
 <style scoped>
-.titulo-galeria {
-  
-}
 
 .galeriaFotos img {
   width: 243px;

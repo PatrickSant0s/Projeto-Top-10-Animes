@@ -41,6 +41,7 @@ export default {
   gap: 10px;
   justify-items: center;
   cursor: pointer;
+  font-family: "Secular One";
 }
 .logout {
   padding: 15px 20px 30px 700px;

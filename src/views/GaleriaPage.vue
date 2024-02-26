@@ -1,12 +1,12 @@
 <template>
   <div class="galeria">
-    <MenuBar/>
-    <GaleriaAnime  class="menuBar"/>
+    <MenuBar />
+    <GaleriaAnime class="menuBar" />
   </div>
 </template>
 
 <script>
-import GaleriaAnime from "@/components/GaleriaAnime.vue"
+import GaleriaAnime from "@/components/GaleriaAnime.vue";
 import MenuBar from "@/components/MenuBar.vue";
 
 export default {
@@ -17,9 +17,8 @@ export default {
 
 <style scoped>
 .galeria {
-background-image: url(https://i.pinimg.com/originals/b8/9d/59/b89d59a4ddde3d6ce01185904089db4b.jpg);
-background-size: 100% 100%;
-color: white;
+  background-image: url(https://www.pixground.com/wp-content/uploads/2023/09/Sunset-Anime-Comet-Stars-AI-Generated-4K-Wallpaper-1.jpg);
+  background-size: 100% 100%;
+  color: white;
 }
-
 </style>

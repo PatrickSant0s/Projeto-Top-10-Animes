@@ -1,6 +1,6 @@
 <template>
-  <div class="Registro">
-    <v-card class="mx-auto" max-width="344" title="User Registration">
+  <div class="Registro pt-16 pl-16">
+    <v-card class="mx-auto " max-width="344" title="User Registration">
       <v-container id="register-form">
         <v-text-field
           v-model="firstName"

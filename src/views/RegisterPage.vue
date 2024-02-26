@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="registro">
         <MenuBar></MenuBar>
         <UserRegister />
     </div>
@@ -21,4 +21,14 @@ export default {
 
 
 
-<style scoped></style>
+<style scoped>
+.registro {
+  /* Define a imagem de fundo */
+  background-image: url(https://img.freepik.com/fotos-gratis/casal-de-silhueta-em-pe-paisagem-urbana-por-do-sol-arranha-ceu-linha-do-horizonte-generativa-ai_188544-12597.jpg);
+  background-size: cover; 
+  background-position: center; 
+  height: 100vh;
+  color: white;
+  font-family: "Secular One";
+}
+</style>
