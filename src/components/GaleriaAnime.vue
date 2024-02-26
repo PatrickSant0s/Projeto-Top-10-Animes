@@ -56,14 +56,7 @@ export default {
 
 <style scoped>
 .titulo-galeria {
-  padding: 100px 0 40px 0;
-  text-align: center;
-  font-family: var(red);
-  font-size: 55px;
-  font-weight: 40;
-  text-transform: uppercase;
-  color: var(--color-principal);
-  font-style: normal;
+  
 }
 
 .galeriaFotos img {
@@ -80,12 +73,15 @@ export default {
 .titulo-galeria {
   padding: 100px 0 40px 0;
   text-align: center;
-  font-family: var(--fonte-principal);
-  font-size: 55px;
-  font-weight: 40;
-  text-transform: uppercase;
-  color: black;
-  font-style: normal;
+  padding: 100px 0 40px 0;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Secular One";
+  font-weight: 400;
+  margin-bottom: 20px;
+  
+  
+  
 }
 
 .galeriaFotos img {}

@@ -40,6 +40,7 @@ export default {
   grid-template-columns: repeat(6, auto);
   gap: 10px;
   justify-items: center;
+  cursor: pointer;
 }
 .logout {
   padding: 15px 20px 30px 700px;

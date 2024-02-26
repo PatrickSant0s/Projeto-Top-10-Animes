@@ -17,7 +17,8 @@ export default {
 
 <style scoped>
 .galeria {
-background-color: black;
+background-image: url(https://i.pinimg.com/originals/b8/9d/59/b89d59a4ddde3d6ce01185904089db4b.jpg);
+background-size: 100% 100%;
 color: white;
 }
 
