@@ -85,7 +85,8 @@ export default {
 
 .navegacao-fotos {
   display: grid;
-  grid-template-columns: repeat(7, 250px);
+  grid-template-columns: repeat(5, 250px);
+  justify-content: center;
   grid-template-rows: 2;
   gap: 20px;
 }
