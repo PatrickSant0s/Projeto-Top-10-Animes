@@ -1,15 +1,20 @@
 <template>
   <main>
     <div>
-      <img
-        class="imagem"
-        :src="anime.imagem"
-        :alt="anime.nome"
-      />
+      <img class="imagem" :src="anime.imagem" :alt="anime.nome" />
       <div class="conteudo">
         <i class="logo"><img :src="anime.logo" alt="" /></i>
+        <div class="Avaliacao">
+          <v-rating
+            v-model="rating"
+            item-aria-label="custom icon label text {0} of {1}"
+          ></v-rating>
+        </div>
         <h2 class="personagem">{{ anime.nome }}</h2>
         <p class="descricao">{{ anime.descricao }}</p>
+        <div class="button">
+          <v-btn color="white" @click="assistirAnime">Assitir</v-btn>
+        </div>
       </div>
     </div>
   </main>
@@ -20,21 +25,24 @@ import { animes } from "@/utils/GaleriaPerfil";
 export default {
   name: "PerfilAnime",
   data() {
-    return {
-     
-    };
+    return {};
   },
   computed: {
-      paramsId() {
-        return this.$route.params.id
-      },
-     anime() {
-      return  animes.find((item) => item.id == this.paramsId)
-     }
+    paramsId() {
+      return this.$route.params.id;
+    },
+    anime() {
+      return animes.find((item) => item.id == this.paramsId);
+    },
+  },
+  methods: {
+    assistirAnime() {
+      // Abre o link do anime em uma nova aba
+      window.open(this.anime.link, '_blank');
+    }
   },
   mounted() {
     console.log(animes);
-    
   },
 };
 </script>
@@ -99,5 +107,12 @@ main::after {
   height: 150px;
   width: 300px;
   margin-bottom: 35px;
+}
+
+.Avaliacao {
+  justify-content: start;
+}
+.button {
+  padding-top: 50px;
 }
 </style>
