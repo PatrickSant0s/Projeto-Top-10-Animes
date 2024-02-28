@@ -3,9 +3,15 @@
     <div>
       <img class="imagem" :src="anime.imagem" :alt="anime.nome" />
       <div class="conteudo">
+        <div class="botaoVoltar">
+          <v-btn color="white" icon @click="voltarPagina">
+            <v-icon style="font-size: 40px;">mdi-arrow-left</v-icon>
+          </v-btn>
+        </div>
         <i class="logo"><img :src="anime.logo" alt="" /></i>
         <div class="Avaliacao">
           <v-rating
+          color="red"
             v-model="rating"
             item-aria-label="custom icon label text {0} of {1}"
           ></v-rating>
@@ -13,7 +19,7 @@
         <h2 class="personagem">{{ anime.nome }}</h2>
         <p class="descricao">{{ anime.descricao }}</p>
         <div class="button">
-          <v-btn color="white" @click="assistirAnime">Assitir</v-btn>
+          <v-btn color="white" @click="assistirAnime">Assistir</v-btn>
         </div>
       </div>
     </div>
@@ -32,14 +38,18 @@ export default {
       return this.$route.params.id;
     },
     anime() {
-      return animes.find((item) => item.id == this.paramsId);
+     return animes.find((item) => item.id == this.paramsId);
     },
   },
   methods: {
     assistirAnime() {
       // Abre o link do anime em uma nova aba
       window.open(this.anime.link, '_blank');
-    }
+    },
+    voltarPagina() {
+      // Coloque aqui a lógica para voltar à página anterior
+      window.history.back();
+    },
   },
   mounted() {
     console.log(animes);
@@ -115,4 +125,10 @@ main::after {
 .button {
   padding-top: 50px;
 }
+.botaoVoltar {
+  padding-bottom: 150px;
+
+  height: 10px;
+}
+
 </style>
