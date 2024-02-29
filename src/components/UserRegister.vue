@@ -1,5 +1,8 @@
 <template>
-  <div class="Registro pt-16 pl-16">
+  <div class=" pt-16 pl-16">
+    <div class="registro success-alert"  v-if="isSuccess">
+      {{ successMessage }}
+    </div>
     <v-card class="mx-auto " max-width="344" title="User Registration">
       <v-container id="register-form">
         <v-text-field
@@ -50,6 +53,8 @@
   </div>
 </template>
 
+
+
 <script>
 export default {
   name: "UserRegister",
@@ -62,7 +67,9 @@ export default {
       firstNameErrorMessage: "",
       lastNameErrorMessage: "",
       emailErrorMessage: "",
-      passwordErrorMessage: ""
+      passwordErrorMessage: "",
+      successMessage: "",
+      isSuccess: false // Adiciona uma variável de estado para controlar a exibição do alerta de sucesso
     };
   },
   methods: {
@@ -103,14 +110,18 @@ export default {
       this.password = "";
       this.clearErrorMessages();
 
+      // Define a mensagem de sucesso e ativa o alerta de sucesso
+      this.successMessage = "Registro realizado com sucesso! Você vai ser direcionado para área de login";
+      this.isSuccess = true;
+
       setTimeout(() => {
-        alert("Registro realizado com sucesso!");
+        // Redireciona para a página de login após um atraso de 3 segundos
         this.$router.push("/login").catch(err => {
           if (err.name !== "NavigationDuplicated") {
             throw err;
           }
         });
-      }, 100);
+      }, 6000);
     },
     clearErrorMessages() {
       this.firstNameErrorMessage = "";
@@ -123,7 +134,28 @@ export default {
 </script>
 
 <style scoped>
-.Registro{ 
-  
+.registro {
+  /* Define a cor verde para o alerta de sucesso */
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}.success-alert {
+  /* Estilos para o alerta de sucesso */
+  position: absolute;
+  top: 7%;
+  left: 40%;
+  width: 24%; 
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
 }
 </style>
+
