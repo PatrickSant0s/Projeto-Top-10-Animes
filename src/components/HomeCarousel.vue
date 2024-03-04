@@ -26,8 +26,8 @@
               height="200"
               max-width="1000"
             />
-            <v-card-subtitle class="pt-4">
-              <h1>{{ image.alt }}</h1>
+            <v-card-subtitle class="pt-4 ">
+              <h1 style="text-align: center;">{{ image.alt }}</h1>
             </v-card-subtitle>
 
             <v-card-text>
@@ -85,10 +85,10 @@ export default {
 
 .video-card {
   position: absolute;
-  top: 35%;
+  top: 43%;
   left: 61%;
   width: 600px;
-  height: 600px;
+  height: 500px;
   transform: translate(-50%, -50%);
   z-index: 1;
   background-color: white;
