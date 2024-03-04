@@ -51,14 +51,16 @@ export default {
       window.open(this.anime.link, '_blank');
     },
     voltarPagina() {
-      // Coloque aqui a lógica para voltar à página anterior
       window.history.back();
     },
+
+    // Calcula a média das avaliações
     calcularMedia(avaliacoes) {
       if (avaliacoes.length === 0) return 0;
       const total = avaliacoes.reduce((acc, cur) => acc + cur, 0);
       return total / avaliacoes.length;
     },
+      // Adiciona uma nova avaliação e recalcula a média
     adicionarAvaliacao(avaliacao) {
       this.anime.avaliacoes.push(avaliacao);
       this.anime.rating = this.calcularMedia(this.anime.avaliacoes);
