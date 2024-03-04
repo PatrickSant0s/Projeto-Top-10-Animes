@@ -10,6 +10,8 @@ export const animes = [
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/1200px-Naruto_logo.svg.png",
     link: "https://www.youtube.com/watch?v=AhG2dKqunLQ&t=12s",
     temporada: "9 Temporadas",
+    rating: 0,
+    avaliacoes: JSON.parse(localStorage.getItem('animes_1_avaliacoes')) || []
 
   },
 
@@ -23,7 +25,8 @@ export const animes = [
     logo: "https://img.asmedia.epimg.net/resizer/P1CLFc7X1QLdkD1BhWpp9kwT3xo=/1472x828/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/XV7QUOH5WFC53I4HMXUXKEKHNA.jpg",
     link: "https://www.youtube.com/watch?v=EzN5SW2QOWY&list=PL-QeKcXki44guOnuBGWoZEMRA8BNtxVRC",
     temporada: "9 Temporadas",
-
+    rating: 0,
+    avaliacoes: JSON.parse(localStorage.getItem('animes_1_avaliacoes')) || []
   },
   {
     id: 3,
@@ -35,6 +38,8 @@ export const animes = [
     logo: "https://fontswan.com/wp-content/uploads/Demon-Slayer-Font.webp",
     link: "https://www.youtube.com/watch?v=IX1aSD_pZh0",
     temporada: "4 Temporadas",
+    rating: 0,
+    avaliacoes: JSON.parse(localStorage.getItem('animes_1_avaliacoes')) || []
 
   },
   {
@@ -47,6 +52,8 @@ export const animes = [
     logo: "https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABdsrzPrNTNDCRY2AyvvUGLszD3THGX1xKLvXWW9fCCIq1rEbVTmEBh3G-ZGgaZlPFtfqqDmxADp4vWOVc0QYK4febTGX2skPYYUD4KPJiLnB.png?r=a54",
     link: "https://www.youtube.com/watch?v=nm5dTf_8oio",
     temporada: "7 Temporadas",
+    rating: 0,
+    avaliacoes: JSON.parse(localStorage.getItem('animes_1_avaliacoes')) || []
   },
   {
     id: 5,
@@ -57,6 +64,8 @@ export const animes = [
     logo: "https://i.ytimg.com/vi/Dd-rd3y6KUg/hqdefault.jpg",
     link: "https://www.youtube.com/watch?v=4gV24yiLiwQ",
     temporada: "4 Temporadas",
+    rating: 0,
+    avaliacoes: JSON.parse(localStorage.getItem('animes_1_avaliacoes')) || []
 
   },
   {
@@ -68,6 +77,8 @@ export const animes = [
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Y%C5%AB_Y%C5%AB_Hakusho_logo.svg/800px-Y%C5%AB_Y%C5%AB_Hakusho_logo.svg.png",
     link: "https://www.youtube.com/watch?v=jQT2s9kaLBw",
     temporada: "1 Temporadas",
+    rating: 0,
+    avaliacoes: JSON.parse(localStorage.getItem('animes_1_avaliacoes')) || []
 
   },
   {
@@ -79,6 +90,8 @@ export const animes = [
     logo: "https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png",
     link: "https://www.youtube.com/watch?v=SSViT336Vq4&list=PL5Yff77BRE_rJQkYlaIOYVOgJv1jRr9d2",
     temporada: "8 Temporadas",
+    rating: 0,
+    avaliacoes: JSON.parse(localStorage.getItem('animes_1_avaliacoes')) || []
 
   },
   {
@@ -91,6 +104,8 @@ export const animes = [
     logo: "https://logosmarcas.net/wp-content/uploads/2021/10/One-Piece-Logo.png",
     link: "https://www.youtube.com/watch?v=Qno808u9NEY",
     temporada: "20 Temporadas",
+    rating: 0,
+    avaliacoes: JSON.parse(localStorage.getItem('animes_1_avaliacoes')) || []
 
   },
   {
@@ -103,6 +118,8 @@ export const animes = [
     logo: "https://seeklogo.com/images/C/cavaleiros-do-zodiaco-logo-7BEBD54081-seeklogo.com.png",
     link: "https://www.youtube.com/watch?v=Nds9oPVLATc",
     temporada: "3 Temporadas",
+    rating: 0,
+    avaliacoes: JSON.parse(localStorage.getItem('animes_1_avaliacoes')) || []
 
   },
   {
@@ -115,6 +132,8 @@ export const animes = [
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Death_Note_logo_%28black_background%29.png/1200px-Death_Note_logo_%28black_background%29.png",
     link: "https://www.youtube.com/watch?v=yI6v5-61VRU",
     temporada: "2 Temporadas",
+    rating: 0,
+    avaliacoes: JSON.parse(localStorage.getItem('animes_1_avaliacoes')) || []
 
   },
 ];

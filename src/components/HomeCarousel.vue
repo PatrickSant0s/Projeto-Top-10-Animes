@@ -8,13 +8,13 @@
           @mouseenter="showVideoCard(index)"
           @mouseleave="hideVideoCard(index)"
         >
-          <img :src="image.rank" class="image" height="450" max-width="100" />
+          <img :src="image.rank" class="image" height="400" max-width="100" />
 
           <img
             :src="image.src"
             :alt="image.alt"
             class="carousel-image"
-            height="400"
+            height="300"
             max-width="00"
           />
 
@@ -79,16 +79,16 @@ export default {
 .carousel-image {
   margin-top: 50px;
   width: 450px;
-  height: 500px;
+  height: 450px;
   border-radius: 16px;
 }
 
 .video-card {
   position: absolute;
-  top: 43%;
+  top: 33%;
   left: 61%;
-  width: 600px;
-  height: 500px;
+  width: 500px;
+  height: 520px;
   transform: translate(-50%, -50%);
   z-index: 1;
   background-color: white;

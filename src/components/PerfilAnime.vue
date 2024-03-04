@@ -11,10 +11,13 @@
         <i class="logo"><img :src="anime.logo" alt="" /></i>
         <div class="Avaliacao">
           <v-rating
-          color="red"
-            v-model="rating"
+            color="red"
+            v-model="anime.rating"
             item-aria-label="custom icon label text {0} of {1}"
           ></v-rating>
+          <span v-if="anime.avaliacoes.length > 0">
+            ({{ anime.rating }} Média)
+          </span>
         </div>
         <h2 class="personagem">{{ anime.nome }}</h2>
         <p class="descricao">{{ anime.descricao }}</p>
@@ -25,6 +28,7 @@
     </div>
   </main>
 </template>
+
 <script>
 import { animes } from "@/utils/GaleriaPerfil";
 
@@ -50,12 +54,23 @@ export default {
       // Coloque aqui a lógica para voltar à página anterior
       window.history.back();
     },
+    calcularMedia(avaliacoes) {
+      if (avaliacoes.length === 0) return 0;
+      const total = avaliacoes.reduce((acc, cur) => acc + cur, 0);
+      return total / avaliacoes.length;
+    },
+    adicionarAvaliacao(avaliacao) {
+      this.anime.avaliacoes.push(avaliacao);
+      this.anime.rating = this.calcularMedia(this.anime.avaliacoes);
+    },
   },
   mounted() {
     console.log(animes);
   },
 };
 </script>
+
+
 
 <style scoped>
 body {
