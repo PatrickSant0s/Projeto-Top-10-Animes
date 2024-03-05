@@ -48,7 +48,7 @@ export const images = [
     alt: "Pokémon",
     link: "https://www.youtube.com/watch?v=SSViT336Vq4&list=PL5Yff77BRE_rJQkYlaIOYVOgJv1jRr9d2",
     descricao:
-      "Ao chegar atrasado ao Laboratório do Professor Samuel Carvalho, o pesquisador local de Pokémon, Ash descobre que os três últimos Pokémon iniciais de Kanto (Bulbasaur, Charmander e Squirtle) já foram doados a outros treinadores. O único Pokémon disponível é um Pikachu, que o Professor Carvalho gentilmente oferece a Ash. A partir desse momento, Ash e Pikachu iniciam sua jornada juntos, enfrentando desafios, fazendo novos amigos e perseguindo seu sonho de se tornar um Mestre Pokémon.",
+      " já foram doados a outros treinadores. O único Pokémon disponível é um Pikachu, que o Professor Carvalho gentilmente oferece a Ash. A partir desse momento, Ash e Pikachu iniciam sua jornada juntos, enfrentando desafios, fazendo novos amigos e perseguindo seu sonho de se tornar um Mestre Pokémon.",
     gif: "https://i.pinimg.com/originals/8a/81/ec/8a81ecd8fdd266b3221da325875c0ea8.gif",
     rank: "https://www.netflix.com/tudum/top10/images/big_numbers/6.png",
     id: 7,
