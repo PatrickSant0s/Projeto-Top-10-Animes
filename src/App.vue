@@ -1,21 +1,19 @@
 <template>
-  <div class="Background"><v-app>
-    <v-main>
-      <router-view />
-    </v-main>
-  </v-app>
-</div>
+  <div class="Background">
+    <v-app>
+      <v-main>
+        <router-view />
+      </v-main>
+    </v-app>
+  </div>
 </template>
 
 <script>
-
-
 import { users } from "./utils/Users";
 
 export default {
   name: "App",
-  components: {  },
-
+  components: {},
 
   computed: {
     users() {
@@ -23,22 +21,15 @@ export default {
     },
   },
 
-  created(){
-    
-    this.alreadyExistsUser()
-    
-  },
-  
-  mounted() {
-    
-  },
+  created() {},
+
+  mounted() {},
   methods: {
     alreadyExistsUser() {
-      let user = JSON.parse(window.localStorage.getItem("user"))
-       if(!user?.Status) this.$router.push('/login')   
-      console.log(user)
-    }
-  }
+      let user = JSON.parse(window.localStorage.getItem("user"));
+      if (!user?.Status) this.$router.push("/login");
+      console.log(user);
+    },
+  },
 };
 </script>
-

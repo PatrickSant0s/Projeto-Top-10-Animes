@@ -10,7 +10,7 @@
         {{ item.menu }}
       </li>
       <div class="botao">
-        <button class="logout">Logout</button>
+        <button class="logout" @click="logout">Logout</button>
       </div>
     </ul>
   </div>
@@ -26,11 +26,18 @@ export default {
         { menu: "Contatos", actionItem: () => this.$router.push("/contact") },
         { menu: "Galeria", actionItem: () => this.$router.push("/galeria") },
         { menu: "Login", actionItem: () => this.$router.push("/login") },
-        { menu: "Register", actionItem: () => this.$router.push("/Register") },
+        { menu: "Register", actionItem: () => this.$router.push("/register") },
         {},
       ],
     };
   },
+  methods: {
+    logout() {
+      // Limpa os dados do Local Storage e redireciona para a página de login
+      localStorage.clear();
+      this.$router.push("/login");
+    }
+  }
 };
 </script>
 

@@ -30,67 +30,44 @@
 </template>
 
 <script>
-
 export default {
   name: "UserLogin",
 
-  data: () => ({
-    email: "",
-    password: "",
-    active: false,
-    loading: false,
-    menuBar: [
-      { menu: "Register", actionItem: () => this.$router.push("/Register") },
-    ],
-
-
-  }),
-
-  computed: {
-    user() {
-
-      return [JSON.parse(window.localStorage.getItem("user"))]
-    },
+  data() {
+    return {
+      email: "",
+      password: "",
+      loading: false,
+    };
   },
-  mounted() {
 
-
-  },
   methods: {
     onSubmit(event) {
       event.preventDefault();
-      if (!this.isFieldsValidation(this.email, this.password)) alert('Preencher ambos corretamente')
 
-      
+      if (!this.isFieldsValidation(this.email, this.password)) {
+        alert('Por favor, preencha ambos os campos corretamente.');
+        return;
+      }
+
       const users = JSON.parse(window.localStorage.getItem("users")) || [];
-
       const isValidUser = users.find(user => user.email === this.email && user.password === this.password);
-
 
       if (isValidUser) {
         this.loading = true;
         alert('Login feito com sucesso');
-        
-        this.$router.push("/").catch()
-
-
+        localStorage.setItem('token', 'your_token_here'); // Defina o token após a autenticação
+        this.$router.push("/").catch();
       } else {
-        alert('Usuário não encontrado. Verifique seus dados e Registre-se ');
-        this.$router.push('/Register').catch()
+        alert('Usuário não encontrado. Por favor, verifique seus dados e registre-se.');
+        this.$router.push('/register').catch();
       }
     },
 
     isFieldsValidation(email, password) {
-      console.log(email, password)
-
-      if (!email || !password) return false
-      else return true
-
-
-
-
+      return email && password;
     }
-  },
+  }
 };
 </script>
 

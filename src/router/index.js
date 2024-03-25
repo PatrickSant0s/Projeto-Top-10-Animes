@@ -29,5 +29,20 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
 });
+router.beforeEach((to, from, next) => {
+  const isAuthenticated = localStorage.getItem('token');
 
+  // Verifica se o usuário está tentando acessar a rota de login ou registro
+  if (to.name === 'LoginPage' || to.name === 'RegisterPage') {
+    // Permite o acesso às rotas de login e registro
+    next();
+  } else {
+    // Bloqueia o acesso às outras rotas se o usuário não estiver autenticado
+    if (!isAuthenticated) {
+      next({ name: 'LoginPage' }); // Redireciona para a página de login
+    } else {
+      next(); // Permite a navegação para outras rotas se estiver autenticado
+    }
+  }
+});
 export default router;
