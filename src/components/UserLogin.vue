@@ -1,6 +1,6 @@
 <template>
   <div class="Menu-Principal">
-      <div class="d-flex flex-column fill-height justify-center align-center text-white pt-16" style="padding-right: 200px;">
+      <div class="d-flex flex-column fill-height justify-center align-center text-white pt-16" style="">
         <h1 class="text-h4 font-weight-thin mb-4 ">
          Login
         </h1>
