@@ -55,7 +55,6 @@ export default {
 
       if (isValidUser) {
         this.loading = true;
-        alert('Login feito com sucesso');
         localStorage.setItem('token', 'your_token_here'); // Defina o token após a autenticação
         this.$router.push("/").catch();
       } else {
