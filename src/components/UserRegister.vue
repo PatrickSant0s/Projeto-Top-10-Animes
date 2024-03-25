@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-16 pl-16">
+  <div class="pt-16 pl-16 mt-16">
     <div class="registro success-alert" v-if="isSuccess">
       {{ successMessage }}
     </div>
@@ -153,7 +153,7 @@ export default {
   /* Estilos para o alerta de sucesso */
   position: absolute;
   top: 5%;
-  left: 795px;
+  left: 790px;
   width: 20%;
   background-color: #d4edda;
   border-color: #c3e6cb;
