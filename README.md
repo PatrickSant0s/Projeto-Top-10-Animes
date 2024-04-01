@@ -39,10 +39,12 @@ Contribuições são bem-vindas! Se você tem alguma sugestão de melhoria ou en
 
 ## Autores
 - Seu Nome (@Pksant0s)
-- 
+
 ## Demonstração do Projeto
 
 [Assista à Demonstração do Projeto (Vídeo)](https://youtu.be/aiEloTX72zA)
+
+![Demonstração do Projeto (Foto)](caminho/para/sua/imagem.jpg)
 
 ## Licença
 Este projeto é licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
