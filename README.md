@@ -42,7 +42,7 @@ Contribuições são bem-vindas! Se você tem alguma sugestão de melhoria ou en
 - 
 ## Demonstração do Projeto
 
-![Demonstração do Projeto](caminho/para/o/seu/gif/animado.gif)
+![Demonstração do Projeto](https://youtu.be/aiEloTX72zA)
 
 
 ## Licença
