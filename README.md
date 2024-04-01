@@ -42,8 +42,7 @@ Contribuições são bem-vindas! Se você tem alguma sugestão de melhoria ou en
 - 
 ## Demonstração do Projeto
 
-![Demonstração do Projeto](https://youtu.be/aiEloTX72zA)
-
+[![Assista à Demonstração do Projeto](https://img.youtube.com/vi/aiEloTX72zA/0.jpg)](https://youtu.be/aiEloTX72zA)
 
 ## Licença
 Este projeto é licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
