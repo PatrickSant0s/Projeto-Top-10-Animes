@@ -14,5 +14,31 @@ O Projeto top 10 é uma aplicação que oferece uma seleção dos top 10 animes 
 - Os usuários podem explorar a galeria para descobrir novas séries e filmes, filtrando por gênero, ano de lançamento, classificação, etc.
 - Cada anime na galeria é acompanhado por uma breve descrição e informações relevantes.
 
+
+### Sistema de Registro e Login
+- Os usuários precisam se registrar para acessar os filmes completos.
+- Após o registro, os usuários podem fazer login para acessar todo o conteúdo da plataforma.
+- O sistema de login protege o acesso aos filmes, garantindo uma experiência exclusiva para os usuários registrados.
+
+  
 ## Como Usar
 1. Clone este repositório para sua máquina local.
+2. Abra o arquivo `index.html` no seu navegador preferido.
+3. Explore os top 10 animes no carrossel ou navegue pela galeria para descobrir mais opções.
+4. Para acessar os filmes completos, registre-se na plataforma e faça login.
+
+## Contribuição
+Contribuições são bem-vindas! Se você tem alguma sugestão de melhoria ou encontrou algum problema, por favor abra uma issue ou envie um pull request.
+
+## Tecnologias Utilizadas
+- HTML
+- CSS
+- JavaScript
+- Vue.Js
+- Vuetify
+
+## Autores
+- Seu Nome (@Pksant0s)
+
+## Licença
+Este projeto é licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
