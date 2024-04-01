@@ -38,7 +38,7 @@ Contribuições são bem-vindas! Se você tem alguma sugestão de melhoria ou en
 - Vuetify
 
 ## Autores
-- Seu Nome (@Pksant0s)
+ (@Pksant0s)
 
 ## Demonstração do Projeto
 
