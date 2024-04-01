@@ -23,9 +23,8 @@ O Projeto top 10 é uma aplicação que oferece uma seleção dos top 10 animes 
   
 ## Como Usar
 1. Clone este repositório para sua máquina local.
-2. Abra o arquivo `index.html` no seu navegador preferido.
-3. Explore os top 10 animes no carrossel ou navegue pela galeria para descobrir mais opções.
-4. Para acessar os filmes completos, registre-se na plataforma e faça login.
+2. Explore os top 10 animes no carrossel ou navegue pela galeria para descobrir mais opções.
+3. Para acessar os filmes completos, registre-se na plataforma e faça login.
 
 ## Contribuição
 Contribuições são bem-vindas! Se você tem alguma sugestão de melhoria ou encontrou algum problema, por favor abra uma issue ou envie um pull request.
