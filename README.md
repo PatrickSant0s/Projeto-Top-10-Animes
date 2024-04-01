@@ -39,6 +39,11 @@ Contribuições são bem-vindas! Se você tem alguma sugestão de melhoria ou en
 
 ## Autores
 - Seu Nome (@Pksant0s)
+- 
+## Demonstração do Projeto
+
+![Demonstração do Projeto](caminho/para/o/seu/gif/animado.gif)
+
 
 ## Licença
 Este projeto é licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
