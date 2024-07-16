@@ -138,7 +138,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style >
 .registro {
   /* Define a cor verde para o alerta de sucesso */
   background-color: #d4edda;
@@ -152,8 +152,8 @@ export default {
 .success-alert {
   /* Estilos para o alerta de sucesso */
   position: absolute;
-  top: 5%;
-  left: 790px;
+  top: 7%;
+  left: 723px;
   width: 20%;
   background-color: #d4edda;
   border-color: #c3e6cb;
@@ -162,5 +162,10 @@ export default {
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: 0.25rem;
+}
+
+.v-application .rounded {
+    border-radius: 4px !important;
+    background-color: transparent;
 }
 </style>
